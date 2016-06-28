@@ -9,4 +9,4 @@ COX_JSONRead.ghuser
 COX_Wrapper.ghuser
 > Wraps text in brackets or xml tag.
 
-> Example: AbC = {AbC} , [AbC] , (AbC) , <td>AbC</td> , <div class="word">AbC</div>
+> Example: AbC = {AbC} , [AbC] , (AbC) , \<td>AbC\</td> , \<div class="word">AbC\</div>
