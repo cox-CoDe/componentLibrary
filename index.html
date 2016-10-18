@@ -2,8 +2,32 @@
 <html>
 <head>
 	<title>COX SCRIPT LIBRARY - COMPONENTS</title>
+	<script src="web/js/jquery-2.2.0.min.js"></script>
 </head>
 <body>
 <h1>COX SCRIPT LIBRARY - COMPONENTS</h1>
+<div id="lib"></div>
 </body>
+<script type="text/javascript">
+	library = {
+		"Data":[
+		{"name":"Wrapper",
+		"image":"wrapper.png"
+		}
+		]
+	}
+	lF = "";
+	$.each(library, function(i,k){
+		$.each(k,function(i,k,v){console.log(k);
+		lF += '<div class="libObject" style="margin-left:100px; margin-right:100px;">';
+		lF += '<h3>'+k.name+'</h3>';
+		lF += '<div style="width:50%;"><p>'+k.name+'</p></div>';
+		lF += '<div style="width:50%;"><img src="web/webimg/'+k.image+'" style="width:100%"></div>';
+		lF += '</div>';
+	});
+		
+	});
+	$('div#lib').html(lF);
+
+</script>
 </html>
